@@ -4,8 +4,8 @@
   "description": "A starter for creating a new React hook",
   "author": {
     "name": "Varun Kumar",
-    "email": "hello@colbyfayock.com",
-    "url": "https://twitter.com/colbyfayock"
+    "email": "heysadboy@gmail.com",
+    "url": "https://github.com/heysadboy"
   },
   "keywords": [
     "react",
@@ -30,9 +30,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/colbyfayock/use-dynamic-size"
+    "url": "https://github.com/heysadboy/use-dynamic-size"
   },
   "bugs": {
-    "url": "https://github.com/colbyfayock/use-dynamic-size/issues"
+    "url": "https://github.com/heysadboy/use-dynamic-size/issues"
   }
 }

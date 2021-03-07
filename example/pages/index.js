@@ -14,11 +14,10 @@ export default function Index() {
 
   const repositoryUrlDisplay = repositoryExists && repositoryUrl.split('://')[1];
 
-  const hookSettings = {
-    message: 'Hello, custom hook!'
-  }
+  const [width, height] = useDynamicSize();
 
-  const { message } = useDynamicSize(hookSettings);
+  console.log(width);
+  console.log(height);
 
   return (
     <main>
@@ -70,14 +69,14 @@ export default function Index() {
 
       <section>
 
-        <h1>{ toCamel(name) }</h1>
+        <h1>{toCamel(name)}</h1>
 
-        <p>{ description }</p>
+        <p>{description}</p>
 
-        { repositoryExists && (
+        {repositoryExists && (
           <p>
             <a href={repositoryUrl}>
-              { repositoryUrlDisplay }
+              {repositoryUrlDisplay}
             </a>
           </p>
         )}
@@ -96,24 +95,23 @@ export default function Index() {
         </p>
         <pre>
           <code>
-{`const hookSettings = {
-  message: 'Hello, custom hook!'
-}
-
-const { message } = useDynamicSize(hookSettings);`}
+            {`const [width, height] = useDynamicSize();`}
           </code>
         </pre>
         <p>
           <strong>Output:</strong>
         </p>
         <p>
-          { message }
+          Width: {width}
+        </p>
+        <p>
+          Height: {height}
         </p>
       </section>
 
       <footer>
         <p>
-          Made by <a href={authorUrl}>{ authorName }</a>
+          Made by <a href={authorUrl}>{authorName}</a>
         </p>
       </footer>
     </main>
