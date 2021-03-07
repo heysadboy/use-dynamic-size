@@ -1,11 +1,9 @@
 import { useDynamicSize } from '../../use-dynamic-size';
 
-import { toCamel } from '../lib/util';
-
 import hookConfig from '../../use-dynamic-size/package.json';
 
 export default function Index() {
-  const { name, description, repository = {}, author = {} } = hookConfig;
+  const { description, repository = {}, author = {} } = hookConfig;
 
   const { name: authorName, url: authorUrl } = author;
 
@@ -66,7 +64,7 @@ export default function Index() {
 
       <section>
 
-        <h1>{toCamel(name)}</h1>
+        <h1>Dynamic Size</h1>
 
         <p>{description}</p>
 
@@ -77,13 +75,7 @@ export default function Index() {
             </a>
           </p>
         )}
-
-        <h2>How to use</h2>
-
-        <p>
-          Resize your browser screen to see the changing width and height.
-        </p>
-
+        
         <h2>Example</h2>
        
         <p>
