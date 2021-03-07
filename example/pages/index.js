@@ -16,9 +16,6 @@ export default function Index() {
 
   const [width, height] = useDynamicSize();
 
-  console.log(width);
-  console.log(height);
-
   return (
     <main>
       <style jsx global>{`
@@ -84,23 +81,11 @@ export default function Index() {
         <h2>How to use</h2>
 
         <p>
-          Add your instructions here!
+          Resize your browser screen to see the changing width and height.
         </p>
 
-        <h2>Examples</h2>
-
-        <h3>Set and grab message</h3>
-        <p>
-          <strong>Input:</strong>
-        </p>
-        <pre>
-          <code>
-            {`const [width, height] = useDynamicSize();`}
-          </code>
-        </pre>
-        <p>
-          <strong>Output:</strong>
-        </p>
+        <h2>Example</h2>
+       
         <p>
           Width: {width}
         </p>

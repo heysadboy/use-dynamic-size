@@ -1,7 +1,7 @@
 {
   "name": "use-dynamic-size",
   "version": "1.0.1",
-  "description": "A starter for creating a new React hook",
+  "description": "An npm package to get the window size dynamically.",
   "author": {
     "name": "Varun Kumar",
     "email": "heysadboy@gmail.com",
