@@ -18,14 +18,18 @@ yarn add use-dynamic-size
 ```
 import useDynamicSize from "use-dynamic-size";
 
-const [width, height] = useDynamicSize();
+const Example = () => {
+  const [width, height] = useDynamicSize();
 
-return (
-  <div>
-    <p>Width: {width}</p>
-    <p>Height: {height}</p>
-  </div>
-);
+  return (
+    <div>
+      <p>Width: {width}</p>
+      <p>Height: {height}</p>
+    </div>
+  );
+};
+
+export default Example;
 ```
 
 You can use this package to render different JSX components based on the screen size to make the code compatible for various screen sizes.
