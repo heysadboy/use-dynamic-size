@@ -16,7 +16,7 @@ yarn add use-dynamic-size
 ### Code Example
 
 ```
-import useDynamicSize from "use-dynamic-size";
+import {useDynamicSize} from "use-dynamic-size";
 
 const Example = () => {
   const [width, height] = useDynamicSize();
